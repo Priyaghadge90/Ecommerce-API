@@ -1,0 +1,48 @@
+<!-- templates/product_success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Added</title>
+    <meta http-equiv="refresh" content="3;url={{ url_for('get_products') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="success">
+        <h2>✅ Product Added Successfully!</h2>
+        <p>Redirecting to products page in 3 seconds...</p>
+    </div>
+    <a href="{{ url_for('get_products') }}">Click here if not redirected</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

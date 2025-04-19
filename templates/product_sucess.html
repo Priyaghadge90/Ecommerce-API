@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Success</title>
+    <script type="text/javascript">
+        // Function to redirect after 2 seconds
+        setTimeout(function() {
+            window.location.href = "{{ url_for('get_products') }}";  // Redirect to /products page
+        }, 2000);  // 2000 milliseconds = 2 seconds
+    </script>
+</head>
+<body>
+    <h1>Product Added Successfully!</h1>
+    <p>You will be redirected to the Products page shortly...</p>
+</body>
+</html>
+
+
+
+
+
