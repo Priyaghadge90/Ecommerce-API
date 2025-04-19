@@ -17,7 +17,7 @@ def render_page(page):
     if os.path.exists(file_path):
         return render_template(f"{page}.html")
     else:
-        return f"Page '{page}' not found.", 404
+        return f"Page '{page}' not found."
 
 @app.route("/registration",methods=["POST"])
 def get_registration():
